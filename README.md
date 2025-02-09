@@ -2,13 +2,15 @@ Overview
 ------
 This project focuses on building predictive models to understand the factors affecting car prices in the U.S. automobile market. A Chinese automobile company is looking to enter the U.S. market, and they need insights into how various factors influence car pricing. The goal is to develop machine learning models that predict car prices based on available independent variables, with the ability to adjust their business strategy and design accordingly.
 
+----------------
+
 Objectives
-------
 Predict car prices based on various features of the car.
 Identify significant variables that affect the car prices.
 Evaluate multiple regression models and select the best one based on performance metrics.
 Perform feature importance analysis to highlight which factors contribute the most to the price.
 Apply hyperparameter tuning to enhance the performance of the best model.
+
 ------
 Dataset
 The dataset consists of various car features and their corresponding prices in the American market. The data was gathered through market surveys. The dataset is available here.
@@ -20,10 +22,8 @@ Loaded the dataset and handled missing values.
 Performed One-Hot Encoding on categorical variables to convert them into numerical values.
 Standardized numerical features to ensure models perform optimally.
 -----------
-
 2. Model Implementation
 Implemented the following five regression algorithms:
-
 Linear Regression
 Decision Tree Regressor
 Random Forest Regressor
