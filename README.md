@@ -1,109 +1,59 @@
-# Machine-learning-final-project
-Machine learning final project
-Project Summary: Predicting Car Prices for the US Market
-Objective
-A Chinese automobile company aims to enter the US market by establishing a local manufacturing unit and producing cars tailored to American consumers. To achieve this, they need to understand the factors influencing car prices in the US market. The goal of this project is to build a predictive model to analyze how independent variables affect car prices and provide actionable insights for the company's business strategy.
+Overview
+This project focuses on building predictive models to understand the factors affecting car prices in the U.S. automobile market. A Chinese automobile company is looking to enter the U.S. market, and they need insights into how various factors influence car pricing. The goal is to develop machine learning models that predict car prices based on available independent variables, with the ability to adjust their business strategy and design accordingly.
 
-Key Components
-Loading and Preprocessing
+Objectives
+Predict car prices based on various features of the car.
+Identify significant variables that affect the car prices.
+Evaluate multiple regression models and select the best one based on performance metrics.
+Perform feature importance analysis to highlight which factors contribute the most to the price.
+Apply hyperparameter tuning to enhance the performance of the best model.
+Dataset
+The dataset consists of various car features and their corresponding prices in the American market. The data was gathered through market surveys. The dataset is available here.
 
-Loaded the dataset from the provided link.
-
-Performed necessary preprocessing steps:
-
-Handled missing values and duplicates.
-
-Encoded categorical variables using one-hot encoding.
-
-Scaled numerical features for consistency.
-
-Split the data into training and testing sets (80-20 split).
-
-Model Implementation
-
-Implemented five regression algorithms:
+Key Steps
+1. Loading and Preprocessing
+Loaded the dataset and handled missing values.
+Performed One-Hot Encoding on categorical variables to convert them into numerical values.
+Standardized numerical features to ensure models perform optimally.
+2. Model Implementation
+Implemented the following five regression algorithms:
 
 Linear Regression
-
 Decision Tree Regressor
-
 Random Forest Regressor
-
 Gradient Boosting Regressor
-
 Support Vector Regressor
+3. Model Evaluation
+Evaluated models based on the following metrics:
 
-Trained and evaluated each model using the preprocessed dataset.
+R-squared (R²): Measures the proportion of variance explained by the model.
+Mean Squared Error (MSE): Indicates the average squared difference between actual and predicted values.
+Mean Absolute Error (MAE): Represents the average absolute error between actual and predicted values.
+4. Feature Importance Analysis
+Identified which variables are significant in predicting car prices. This helps the company understand which features (such as brand, engine type, or car model) have the most influence on price.
 
-Model Evaluation
-
-Compared the performance of all models using:
-
-R-squared (R²): To measure the proportion of variance explained by the model.
-
-Mean Squared Error (MSE): To quantify the average squared difference between predicted and actual values.
-
-Mean Absolute Error (MAE): To measure the average absolute difference between predicted and actual values.
-
-Identified the best-performing model based on these metrics.
-
-Feature Importance Analysis
-
-Analyzed the significant variables affecting car prices using feature importance from the best-performing model (e.g., Random Forest or Gradient Boosting).
-
-Provided insights into which features (e.g., engine size, horsepower, brand) have the most impact on car prices.
-
-Hyperparameter Tuning
-
-Performed hyperparameter tuning on the best-performing model using GridSearchCV.
-
-Evaluated whether tuning improved the model's performance (e.g., higher R², lower MSE/MAE).
-
-Results
-Best Performing Model: Random Forest Regressor (or Gradient Boosting Regressor, depending on evaluation results).
-
-Key Insights:
-
-The most significant features influencing car prices in the US market are [list top features, e.g., engine size, brand, horsepower].
-
-Hyperparameter tuning improved the model's performance, achieving [specific metrics, e.g., R² = 0.90, MSE = 1000].
-
-Business Implications:
-
-The company can focus on optimizing the significant features (e.g., engine size, brand reputation) to meet target price levels.
-
-The model provides a clear understanding of pricing dynamics in the US market, enabling informed decisions on car design and business strategy.
-
-Repository Structure
-Copy
-Car-Price-Prediction/
-├── data/
-│   └── car_data.csv               # Dataset used for analysis
-├── notebooks/
-│   └── Car_Price_Prediction.ipynb # Jupyter notebook with full code and analysis
-├── README.md                      # Project summary and instructions
-└── requirements.txt               # List of Python libraries required
-How to Use
-Clone the repository:
-
-bash
-Copy
-git clone https://github.com/your-username/Car-Price-Prediction.git
-Install the required libraries:
-
-bash
-Copy
-pip install -r requirements.txt
-Open the Jupyter notebook (Car_Price_Prediction.ipynb) to view the full analysis and code.
-
+5. Hyperparameter Tuning
+Performed hyperparameter tuning for models like Random Forest Regressor and Gradient Boosting Regressor using GridSearchCV to find optimal parameters and improve model performance.
+Conclusion
+The best performing model was identified based on evaluation metrics, with a justification for why it performed better.
+Feature importance analysis revealed key variables that affect car prices in the U.S. market.
+Hyperparameter tuning resulted in better performance for certain models, improving the predictive power of the selected model.
 Technologies Used
 Python
+Pandas for data manipulation
+Scikit-learn for machine learning algorithms and evaluation
+Matplotlib and Seaborn for visualization
+GridSearchCV for hyperparameter tuning
+Installation
+To run the project, you will need to install the following dependencies:
 
-Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn
-
-Future Work
-Expand the dataset to include more features (e.g., fuel efficiency, safety ratings).
-
-Explore advanced models like XGBoost or Neural Networks for improved performance.
-
-Deploy the model as a web application for real-time price predictions.
+bash
+Copy
+Edit
+pip install pandas scikit-learn matplotlib seaborn
+How to Run
+Download the dataset from the provided link and save it locally.
+Load the dataset into the notebook and perform preprocessing.
+Implement regression models and evaluate their performance.
+Perform feature importance analysis and hyperparameter tuning.
+Review the results and finalize the best model.
