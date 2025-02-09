@@ -1,3 +1,6 @@
+Car Price Prediction using Regression Models
+------------
+
 Overview
 ------
 This project focuses on building predictive models to understand the factors affecting car prices in the U.S. automobile market. A Chinese automobile company is looking to enter the U.S. market, and they need insights into how various factors influence car pricing. The goal is to develop machine learning models that predict car prices based on available independent variables, with the ability to adjust their business strategy and design accordingly.
